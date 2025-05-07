@@ -1,12 +1,12 @@
 class WalkStrategy {
     move() {
-        console.log("🦶 The robot walks.");
+        console.log("The robot walks.");
     }
 }
 
 class DriveStrategy {
     move() {
-        console.log("🚗 The robot drives.");
+        console.log("The robot drives.");
     }
 }
 
@@ -27,7 +27,7 @@ class Robot {
     }
 
     move() {
-        console.log(`🤖 ${this.name} is moving:`);
+        console.log(`${this.name} is moving:`);
         this.strategy.move();
     }
 }
@@ -40,8 +40,8 @@ const flying = new FlyStrategy();
 // Context
 const robot = new Robot("Bender", walking);
 
-robot.move();               // 🦶 The robot walks.
+robot.move();               
 robot.setStrategy(driving);
-robot.move();               // 🚗 The robot drives.
+robot.move();               
 robot.setStrategy(flying);
-robot.move();               // ✈️ The robot flies.
+robot.move();               
