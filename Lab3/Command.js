@@ -1,10 +1,10 @@
 class Light {
     turnOn() {
-        console.log("💡 The light is ON");
+        console.log("The light is ON");
     }
 
     turnOff() {
-        console.log("🔌 The light is OFF");
+        console.log("The light is OFF");
     }
 }
 
