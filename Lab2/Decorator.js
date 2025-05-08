@@ -17,5 +17,7 @@ class TimestampDecorator {
 
 const printer = new SimplePrinter();
 const decoratedPrinter = new TimestampDecorator(printer);
+const message = "Hello!";
 
-decoratedPrinter.print("Hello!")
+printer.print(message)
+decoratedPrinter.print(message)
